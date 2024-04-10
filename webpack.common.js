@@ -7,7 +7,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Your Title Here",
+      hash: true,
+      title: "tada! Sign up",
+      myPageHeader: "Sign up for tada! here",
+      template: "./src/index.html",
+      filename: "./index.html",
     }),
   ],
   output: {
