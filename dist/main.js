@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("Hello world")})();
+(()=>{const e=document.getElementById("email"),t=document.getElementById("username");e.addEventListener("input",(()=>{e.validity.typeMismatch?e.setCustomValidity("Please enter a valid email address."):e.setCustomValidity("")})),t.addEventListener("input",(()=>{t.validity.tooShort?t.setCustomValidity("The username needs to be at least 8 characters long."):t.setCustomValidity("")}))})();
