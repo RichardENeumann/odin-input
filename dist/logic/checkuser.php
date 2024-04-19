@@ -2,9 +2,8 @@
 
 $response = [];
 
-if (strlen($_GET["username"]) >= 8 || strlen($_GET["username"] <= 20)) {
+if (strlen($_GET["username"]) > 7 && strlen($_GET["username"]) < 21) {
   $response["valid"] = true;
-  
 } else {
   $response["valid"] = false;
 }
