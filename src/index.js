@@ -1,3 +1,9 @@
-"use strict";
+const email = document.getElementById("email");
 
-console.log("Hello world");
+email.addEventListener("input", () => {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I am expecting an email address!");
+  } else {
+    email.setCustomValidity("");
+  }
+});

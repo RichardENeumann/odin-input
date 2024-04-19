@@ -8,8 +8,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
-      title: "tada! Sign up",
-      myPageHeader: "Sign up for tada! here",
+      title: "tada! - Sign up",
+      myPageHeader: "Sign up for an account:",
       template: "./src/index.html",
       filename: "./index.html",
     }),
