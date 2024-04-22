@@ -8,10 +8,14 @@
 <body>
   <h1><%= htmlWebpackPlugin.options.myPageHeader %></h1>
   <form action="./logic/checkuser.php">
-    <label for="email">Please enter your email address:</label>
+    <label for="email">Enter email address:</label>
     <input type="email" id="email" name="mail" required><br>
-    <label for="username">Please enter your desired username:</label>
-    <input type="text" id="username" name="username" minlength="8" maxlength="20" required>
+    <label for="username">Enter desired username:</label>
+    <input type="text" id="username" name="username" minlength="8" maxlength="20" required><br>
+    <label for="password">Enter password:</label>
+    <input type="text" id="password" name="password" minlength="8" maxlength="20" required><br>
+    <label for="pwConfirm">Confirm password:</label>
+    <input type="text" id="pwConfirm" name="pwConfirm" minlength="8" maxlength="20" required><br>
     <button>Sign up</button>
   </form>
 </body>
